@@ -1,0 +1,1887 @@
+{
+  "className": "Model",
+  "children": [
+    {
+      "className": "Part",
+      "name": "Base",
+      "properties": {
+        "Anchored": true,
+        "Shape": "Cylinder",
+        "Material": "Metal",
+        "Color": {
+          "Color3uint8": [
+            42,
+            48,
+            62
+          ]
+        },
+        "Position": [
+          46.0,
+          0.2,
+          -46.0
+        ],
+        "Orientation": [
+          0,
+          0,
+          90
+        ],
+        "Size": [
+          0.4,
+          5.543,
+          5.543
+        ]
+      }
+    },
+    {
+      "className": "Part",
+      "name": "Bowl",
+      "properties": {
+        "Anchored": true,
+        "Material": "Metal",
+        "Color": {
+          "Color3uint8": [
+            212,
+            175,
+            55
+          ]
+        },
+        "Position": [
+          46.0,
+          2.566,
+          -46.0
+        ],
+        "Size": [
+          1.4,
+          6.539,
+          6.539
+        ],
+        "Shape": "Cylinder",
+        "Orientation": [
+          0,
+          0,
+          90
+        ]
+      }
+    },
+    {
+      "className": "Part",
+      "name": "Coals",
+      "properties": {
+        "Anchored": true,
+        "Shape": "Cylinder",
+        "Material": "Slate",
+        "Color": {
+          "Color3uint8": [
+            38,
+            30,
+            44
+          ]
+        },
+        "Position": [
+          46.0,
+          3.366,
+          -46.0
+        ],
+        "Orientation": [
+          0,
+          0,
+          90
+        ],
+        "Size": [
+          0.34,
+          5.667,
+          5.667
+        ]
+      }
+    },
+    {
+      "className": "Part",
+      "name": "Fire",
+      "properties": {
+        "Anchored": true,
+        "Material": "Metal",
+        "Color": {
+          "Color3uint8": [
+            212,
+            175,
+            55
+          ]
+        },
+        "Position": [
+          46.0,
+          3.566,
+          -46.0
+        ],
+        "Size": [
+          5.34,
+          0.3,
+          5.34
+        ],
+        "CanCollide": false,
+        "Transparency": 1
+      },
+      "children": [
+        {
+          "className": "ParticleEmitter",
+          "name": "Flame",
+          "properties": {
+            "Color": {
+              "ColorSequence": {
+                "keypoints": [
+                  {
+                    "time": 0.0,
+                    "color": [
+                      255,
+                      183,
+                      13
+                    ]
+                  },
+                  {
+                    "time": 0.1,
+                    "color": [
+                      242,
+                      138,
+                      26
+                    ]
+                  },
+                  {
+                    "time": 0.22,
+                    "color": [
+                      235,
+                      95,
+                      41
+                    ]
+                  },
+                  {
+                    "time": 0.36,
+                    "color": [
+                      235,
+                      54,
+                      58
+                    ]
+                  },
+                  {
+                    "time": 0.58,
+                    "color": [
+                      246,
+                      23,
+                      97
+                    ]
+                  },
+                  {
+                    "time": 1.0,
+                    "color": [
+                      255,
+                      10,
+                      159
+                    ]
+                  }
+                ]
+              }
+            },
+            "Rate": 260,
+            "Size": {
+              "NumberSequence": {
+                "keypoints": [
+                  {
+                    "time": 0.0,
+                    "value": 0.4
+                  },
+                  {
+                    "time": 0.3,
+                    "value": 0.95
+                  },
+                  {
+                    "time": 1.0,
+                    "value": 0.1
+                  }
+                ]
+              }
+            },
+            "Transparency": {
+              "NumberSequence": {
+                "keypoints": [
+                  {
+                    "time": 0.0,
+                    "value": 0.6
+                  },
+                  {
+                    "time": 0.55,
+                    "value": 0.72
+                  },
+                  {
+                    "time": 1.0,
+                    "value": 1.0
+                  }
+                ]
+              }
+            },
+            "Lifetime": {
+              "NumberRange": [
+                0.5,
+                0.9
+              ]
+            },
+            "Speed": {
+              "NumberRange": [
+                4,
+                7
+              ]
+            },
+            "Acceleration": [
+              0,
+              7,
+              0
+            ],
+            "Drag": 1.2,
+            "SpreadAngle": [
+              22,
+              22
+            ],
+            "EmissionDirection": "Top",
+            "LightEmission": 0.35,
+            "Brightness": 1,
+            "LockedToPart": false,
+            "Squash": {
+              "NumberSequence": {
+                "keypoints": [
+                  {
+                    "time": 0.0,
+                    "value": 1.0
+                  },
+                  {
+                    "time": 0.5,
+                    "value": 2.2
+                  },
+                  {
+                    "time": 1.0,
+                    "value": 2.8
+                  }
+                ]
+              }
+            }
+          }
+        },
+        {
+          "className": "PointLight",
+          "name": "Glow",
+          "properties": {
+            "Brightness": 4,
+            "Range": 30,
+            "Color": {
+              "Color3uint8": [
+                255,
+                140,
+                200
+              ]
+            }
+          }
+        },
+        {
+          "className": "ParticleEmitter",
+          "name": "Sparks",
+          "properties": {
+            "Color": {
+              "ColorSequence": {
+                "keypoints": [
+                  {
+                    "time": 0.0,
+                    "color": [
+                      255,
+                      160,
+                      40
+                    ]
+                  },
+                  {
+                    "time": 0.3,
+                    "color": [
+                      240,
+                      50,
+                      70
+                    ]
+                  },
+                  {
+                    "time": 1.0,
+                    "color": [
+                      255,
+                      20,
+                      170
+                    ]
+                  }
+                ]
+              }
+            },
+            "Rate": 50,
+            "Lifetime": {
+              "NumberRange": [
+                0.5,
+                1.0
+              ]
+            },
+            "Speed": {
+              "NumberRange": [
+                1.5,
+                1.5
+              ]
+            },
+            "Acceleration": [
+              0,
+              7.5,
+              0
+            ],
+            "SpreadAngle": [
+              180,
+              180
+            ],
+            "Size": {
+              "NumberSequence": {
+                "keypoints": [
+                  {
+                    "time": 0.0,
+                    "value": 0.0
+                  },
+                  {
+                    "time": 0.5,
+                    "value": 0.0625
+                  },
+                  {
+                    "time": 1.0,
+                    "value": 0.0
+                  }
+                ]
+              }
+            },
+            "Transparency": {
+              "NumberSequence": {
+                "keypoints": [
+                  {
+                    "time": 0.0,
+                    "value": 1.0
+                  },
+                  {
+                    "time": 0.2,
+                    "value": 0.1
+                  },
+                  {
+                    "time": 0.8,
+                    "value": 0.1
+                  },
+                  {
+                    "time": 1.0,
+                    "value": 1.0
+                  }
+                ]
+              }
+            },
+            "Rotation": {
+              "NumberRange": [
+                -180,
+                180
+              ]
+            },
+            "RotSpeed": {
+              "NumberRange": [
+                -360,
+                360
+              ]
+            },
+            "EmissionDirection": "Top",
+            "LightEmission": 1,
+            "LockedToPart": false
+          }
+        }
+      ]
+    },
+    {
+      "className": "Part",
+      "name": "Cage01",
+      "properties": {
+        "Anchored": true,
+        "CanCollide": false,
+        "Material": "Metal",
+        "Color": {
+          "Color3uint8": [
+            8,
+            61,
+            80
+          ]
+        },
+        "Position": [
+          42.513,
+          3.137,
+          -46.012
+        ],
+        "Orientation": [
+          -22.5,
+          90.002,
+          -0.001
+        ],
+        "Size": [
+          0.546,
+          0.626,
+          0.274
+        ]
+      }
+    },
+    {
+      "className": "Part",
+      "name": "Cage02",
+      "properties": {
+        "Anchored": true,
+        "CanCollide": false,
+        "Material": "Metal",
+        "Color": {
+          "Color3uint8": [
+            8,
+            61,
+            80
+          ]
+        },
+        "Position": [
+          45.807,
+          1.923,
+          -42.66
+        ],
+        "Orientation": [
+          -0.0,
+          180.0,
+          0.0
+        ],
+        "Size": [
+          0.546,
+          2.192,
+          0.274
+        ]
+      }
+    },
+    {
+      "className": "Part",
+      "name": "Cage03",
+      "properties": {
+        "Anchored": true,
+        "CanCollide": false,
+        "Material": "Metal",
+        "Color": {
+          "Color3uint8": [
+            8,
+            61,
+            80
+          ]
+        },
+        "Position": [
+          48.593,
+          3.131,
+          -48.53
+        ],
+        "Orientation": [
+          -22.5,
+          -44.999,
+          0.001
+        ],
+        "Size": [
+          0.546,
+          0.626,
+          0.274
+        ]
+      }
+    },
+    {
+      "className": "Part",
+      "name": "Cage04",
+      "properties": {
+        "Anchored": true,
+        "CanCollide": false,
+        "Material": "Metal",
+        "Color": {
+          "Color3uint8": [
+            8,
+            61,
+            80
+          ]
+        },
+        "Position": [
+          43.638,
+          1.917,
+          -48.281
+        ],
+        "Orientation": [
+          -0.0,
+          45.0,
+          -0.001
+        ],
+        "Size": [
+          0.546,
+          2.192,
+          0.274
+        ]
+      }
+    },
+    {
+      "className": "Part",
+      "name": "Cage05",
+      "properties": {
+        "Anchored": true,
+        "CanCollide": false,
+        "Material": "Metal",
+        "Color": {
+          "Color3uint8": [
+            8,
+            61,
+            80
+          ]
+        },
+        "Position": [
+          43.716,
+          1.872,
+          -43.655
+        ],
+        "Orientation": [
+          -0.0,
+          135.001,
+          -0.001
+        ],
+        "Size": [
+          0.546,
+          2.192,
+          0.274
+        ]
+      }
+    },
+    {
+      "className": "Part",
+      "name": "Cage06",
+      "properties": {
+        "Anchored": true,
+        "CanCollide": false,
+        "Material": "Metal",
+        "Color": {
+          "Color3uint8": [
+            8,
+            61,
+            80
+          ]
+        },
+        "Position": [
+          43.834,
+          0.424,
+          -43.772
+        ],
+        "Orientation": [
+          -22.5,
+          135.001,
+          -0.001
+        ],
+        "Size": [
+          0.546,
+          0.814,
+          0.274
+        ]
+      }
+    },
+    {
+      "className": "Part",
+      "name": "Cage07",
+      "properties": {
+        "Anchored": true,
+        "CanCollide": false,
+        "Material": "Metal",
+        "Color": {
+          "Color3uint8": [
+            8,
+            61,
+            80
+          ]
+        },
+        "Position": [
+          48.419,
+          3.198,
+          -43.503
+        ],
+        "Orientation": [
+          -22.5,
+          -135.0,
+          0.001
+        ],
+        "Size": [
+          0.546,
+          0.626,
+          0.274
+        ]
+      }
+    },
+    {
+      "className": "Part",
+      "name": "Cage08",
+      "properties": {
+        "Anchored": true,
+        "CanCollide": false,
+        "Material": "Metal",
+        "Color": {
+          "Color3uint8": [
+            8,
+            61,
+            80
+          ]
+        },
+        "Position": [
+          43.661,
+          3.142,
+          -43.6
+        ],
+        "Orientation": [
+          -22.5,
+          135.001,
+          -0.001
+        ],
+        "Size": [
+          0.546,
+          0.626,
+          0.274
+        ]
+      }
+    },
+    {
+      "className": "Part",
+      "name": "Cage09",
+      "properties": {
+        "Anchored": true,
+        "CanCollide": false,
+        "Material": "Metal",
+        "Color": {
+          "Color3uint8": [
+            8,
+            61,
+            80
+          ]
+        },
+        "Position": [
+          43.756,
+          0.47,
+          -48.166
+        ],
+        "Orientation": [
+          -22.501,
+          45.001,
+          -0.001
+        ],
+        "Size": [
+          0.546,
+          0.814,
+          0.274
+        ]
+      }
+    },
+    {
+      "className": "Part",
+      "name": "Cage10",
+      "properties": {
+        "Anchored": true,
+        "CanCollide": false,
+        "Material": "Metal",
+        "Color": {
+          "Color3uint8": [
+            8,
+            61,
+            80
+          ]
+        },
+        "Position": [
+          43.581,
+          3.187,
+          -48.338
+        ],
+        "Orientation": [
+          -22.501,
+          45.001,
+          -0.001
+        ],
+        "Size": [
+          0.546,
+          0.626,
+          0.274
+        ]
+      }
+    },
+    {
+      "className": "Part",
+      "name": "Cage11",
+      "properties": {
+        "Anchored": true,
+        "CanCollide": false,
+        "Material": "Metal",
+        "Color": {
+          "Color3uint8": [
+            8,
+            61,
+            80
+          ]
+        },
+        "Position": [
+          48.362,
+          1.928,
+          -43.557
+        ],
+        "Orientation": [
+          0.0,
+          -135.0,
+          0.001
+        ],
+        "Size": [
+          0.546,
+          2.192,
+          0.274
+        ]
+      }
+    },
+    {
+      "className": "Part",
+      "name": "Cage12",
+      "properties": {
+        "Anchored": true,
+        "CanCollide": false,
+        "Material": "Metal",
+        "Color": {
+          "Color3uint8": [
+            8,
+            61,
+            80
+          ]
+        },
+        "Position": [
+          49.202,
+          3.131,
+          -47.42
+        ],
+        "Orientation": [
+          -22.5,
+          -67.499,
+          0.001
+        ],
+        "Size": [
+          0.546,
+          0.626,
+          0.274
+        ]
+      }
+    },
+    {
+      "className": "Part",
+      "name": "Cage13",
+      "properties": {
+        "Anchored": true,
+        "CanCollide": false,
+        "Material": "Metal",
+        "Color": {
+          "Color3uint8": [
+            8,
+            61,
+            80
+          ]
+        },
+        "Position": [
+          42.83,
+          1.872,
+          -44.78
+        ],
+        "Orientation": [
+          0.0,
+          112.501,
+          -0.001
+        ],
+        "Size": [
+          0.546,
+          2.192,
+          0.274
+        ]
+      }
+    },
+    {
+      "className": "Part",
+      "name": "Cage14",
+      "properties": {
+        "Anchored": true,
+        "CanCollide": false,
+        "Material": "Metal",
+        "Color": {
+          "Color3uint8": [
+            8,
+            61,
+            80
+          ]
+        },
+        "Position": [
+          44.499,
+          3.187,
+          -49.159
+        ],
+        "Orientation": [
+          -22.5,
+          22.5,
+          -0.001
+        ],
+        "Size": [
+          0.546,
+          0.626,
+          0.274
+        ]
+      }
+    },
+    {
+      "className": "Part",
+      "name": "Cage15",
+      "properties": {
+        "Anchored": true,
+        "CanCollide": false,
+        "Material": "Metal",
+        "Color": {
+          "Color3uint8": [
+            8,
+            61,
+            80
+          ]
+        },
+        "Position": [
+          49.102,
+          1.934,
+          -44.721
+        ],
+        "Orientation": [
+          -0.0,
+          -112.499,
+          0.001
+        ],
+        "Size": [
+          0.546,
+          2.192,
+          0.274
+        ]
+      }
+    },
+    {
+      "className": "Part",
+      "name": "Cage16",
+      "properties": {
+        "Anchored": true,
+        "CanCollide": false,
+        "Material": "Metal",
+        "Color": {
+          "Color3uint8": [
+            8,
+            61,
+            80
+          ]
+        },
+        "Position": [
+          44.53,
+          1.918,
+          -49.086
+        ],
+        "Orientation": [
+          0.0,
+          22.5,
+          -0.001
+        ],
+        "Size": [
+          0.546,
+          2.192,
+          0.274
+        ]
+      }
+    },
+    {
+      "className": "Part",
+      "name": "Cage17",
+      "properties": {
+        "Anchored": true,
+        "CanCollide": false,
+        "Material": "Metal",
+        "Color": {
+          "Color3uint8": [
+            8,
+            61,
+            80
+          ]
+        },
+        "Position": [
+          42.758,
+          3.142,
+          -44.751
+        ],
+        "Orientation": [
+          -22.5,
+          112.502,
+          -0.001
+        ],
+        "Size": [
+          0.546,
+          0.626,
+          0.274
+        ]
+      }
+    },
+    {
+      "className": "Part",
+      "name": "Cage18",
+      "properties": {
+        "Anchored": true,
+        "CanCollide": false,
+        "Material": "Metal",
+        "Color": {
+          "Color3uint8": [
+            8,
+            61,
+            80
+          ]
+        },
+        "Position": [
+          44.592,
+          0.47,
+          -48.933
+        ],
+        "Orientation": [
+          -22.5,
+          22.5,
+          -0.001
+        ],
+        "Size": [
+          0.546,
+          0.814,
+          0.274
+        ]
+      }
+    },
+    {
+      "className": "Part",
+      "name": "Cage19",
+      "properties": {
+        "Anchored": true,
+        "CanCollide": false,
+        "Material": "Metal",
+        "Color": {
+          "Color3uint8": [
+            8,
+            61,
+            80
+          ]
+        },
+        "Position": [
+          47.319,
+          0.417,
+          -49.178
+        ],
+        "Orientation": [
+          -22.5,
+          -22.5,
+          0.0
+        ],
+        "Size": [
+          0.546,
+          0.814,
+          0.274
+        ]
+      }
+    },
+    {
+      "className": "Part",
+      "name": "Cage20",
+      "properties": {
+        "Anchored": true,
+        "CanCollide": false,
+        "Material": "Metal",
+        "Color": {
+          "Color3uint8": [
+            8,
+            61,
+            80
+          ]
+        },
+        "Position": [
+          47.022,
+          0.48,
+          -43.067
+        ],
+        "Orientation": [
+          -22.5,
+          -157.5,
+          0.001
+        ],
+        "Size": [
+          0.546,
+          0.814,
+          0.274
+        ]
+      }
+    },
+    {
+      "className": "Part",
+      "name": "Cage21",
+      "properties": {
+        "Anchored": true,
+        "CanCollide": false,
+        "Material": "Metal",
+        "Color": {
+          "Color3uint8": [
+            8,
+            61,
+            80
+          ]
+        },
+        "Position": [
+          47.382,
+          1.866,
+          -49.332
+        ],
+        "Orientation": [
+          -0.0,
+          -22.5,
+          0.0
+        ],
+        "Size": [
+          0.546,
+          2.192,
+          0.274
+        ]
+      }
+    },
+    {
+      "className": "Part",
+      "name": "Cage22",
+      "properties": {
+        "Anchored": true,
+        "CanCollide": false,
+        "Material": "Metal",
+        "Color": {
+          "Color3uint8": [
+            8,
+            61,
+            80
+          ]
+        },
+        "Position": [
+          42.984,
+          0.424,
+          -44.844
+        ],
+        "Orientation": [
+          -22.5,
+          112.502,
+          -0.001
+        ],
+        "Size": [
+          0.546,
+          0.814,
+          0.274
+        ]
+      }
+    },
+    {
+      "className": "Part",
+      "name": "Cage23",
+      "properties": {
+        "Anchored": true,
+        "CanCollide": false,
+        "Material": "Metal",
+        "Color": {
+          "Color3uint8": [
+            8,
+            61,
+            80
+          ]
+        },
+        "Position": [
+          42.856,
+          3.192,
+          -47.308
+        ],
+        "Orientation": [
+          -22.501,
+          67.501,
+          -0.001
+        ],
+        "Size": [
+          0.546,
+          0.626,
+          0.274
+        ]
+      }
+    },
+    {
+      "className": "Part",
+      "name": "Cage24",
+      "properties": {
+        "Anchored": true,
+        "CanCollide": false,
+        "Material": "Metal",
+        "Color": {
+          "Color3uint8": [
+            8,
+            61,
+            80
+          ]
+        },
+        "Position": [
+          47.086,
+          1.928,
+          -42.914
+        ],
+        "Orientation": [
+          -0.0,
+          -157.5,
+          0.001
+        ],
+        "Size": [
+          0.546,
+          2.192,
+          0.274
+        ]
+      }
+    },
+    {
+      "className": "Part",
+      "name": "Cage25",
+      "properties": {
+        "Anchored": true,
+        "CanCollide": false,
+        "Material": "Metal",
+        "Color": {
+          "Color3uint8": [
+            8,
+            61,
+            80
+          ]
+        },
+        "Position": [
+          48.977,
+          0.412,
+          -47.325
+        ],
+        "Orientation": [
+          -22.5,
+          -67.499,
+          0.001
+        ],
+        "Size": [
+          0.546,
+          0.814,
+          0.274
+        ]
+      }
+    },
+    {
+      "className": "Part",
+      "name": "Cage26",
+      "properties": {
+        "Anchored": true,
+        "CanCollide": false,
+        "Material": "Metal",
+        "Color": {
+          "Color3uint8": [
+            8,
+            61,
+            80
+          ]
+        },
+        "Position": [
+          47.115,
+          3.198,
+          -42.841
+        ],
+        "Orientation": [
+          -22.5,
+          -157.5,
+          0.001
+        ],
+        "Size": [
+          0.546,
+          0.626,
+          0.274
+        ]
+      }
+    },
+    {
+      "className": "Part",
+      "name": "Cage27",
+      "properties": {
+        "Anchored": true,
+        "CanCollide": false,
+        "Material": "Metal",
+        "Color": {
+          "Color3uint8": [
+            8,
+            61,
+            80
+          ]
+        },
+        "Position": [
+          49.243,
+          0.407,
+          -46.012
+        ],
+        "Orientation": [
+          -22.501,
+          -89.999,
+          0.001
+        ],
+        "Size": [
+          0.546,
+          0.814,
+          0.274
+        ]
+      }
+    },
+    {
+      "className": "Part",
+      "name": "Cage28",
+      "properties": {
+        "Anchored": true,
+        "CanCollide": false,
+        "Material": "Metal",
+        "Color": {
+          "Color3uint8": [
+            8,
+            61,
+            80
+          ]
+        },
+        "Position": [
+          42.757,
+          0.419,
+          -46.012
+        ],
+        "Orientation": [
+          -22.5,
+          90.002,
+          -0.001
+        ],
+        "Size": [
+          0.546,
+          0.814,
+          0.274
+        ]
+      }
+    },
+    {
+      "className": "Part",
+      "name": "Cage29",
+      "properties": {
+        "Anchored": true,
+        "CanCollide": false,
+        "Material": "Metal",
+        "Color": {
+          "Color3uint8": [
+            8,
+            61,
+            80
+          ]
+        },
+        "Position": [
+          42.592,
+          1.867,
+          -46.012
+        ],
+        "Orientation": [
+          -0.0,
+          90.001,
+          -0.001
+        ],
+        "Size": [
+          0.546,
+          2.192,
+          0.274
+        ]
+      }
+    },
+    {
+      "className": "Part",
+      "name": "Cage30",
+      "properties": {
+        "Anchored": true,
+        "CanCollide": false,
+        "Material": "Metal",
+        "Color": {
+          "Color3uint8": [
+            8,
+            61,
+            80
+          ]
+        },
+        "Position": [
+          45.807,
+          3.182,
+          -49.419
+        ],
+        "Orientation": [
+          -22.5,
+          0.0,
+          -0.0
+        ],
+        "Size": [
+          0.546,
+          0.626,
+          0.274
+        ]
+      }
+    },
+    {
+      "className": "Part",
+      "name": "Cage31",
+      "properties": {
+        "Anchored": true,
+        "CanCollide": false,
+        "Material": "Metal",
+        "Color": {
+          "Color3uint8": [
+            8,
+            61,
+            80
+          ]
+        },
+        "Position": [
+          49.487,
+          3.126,
+          -46.012
+        ],
+        "Orientation": [
+          -22.501,
+          -89.999,
+          0.001
+        ],
+        "Size": [
+          0.546,
+          0.626,
+          0.274
+        ]
+      }
+    },
+    {
+      "className": "Part",
+      "name": "Cage32",
+      "properties": {
+        "Anchored": true,
+        "CanCollide": false,
+        "Material": "Metal",
+        "Color": {
+          "Color3uint8": [
+            8,
+            61,
+            80
+          ]
+        },
+        "Position": [
+          45.807,
+          0.475,
+          -42.825
+        ],
+        "Orientation": [
+          -22.5,
+          180.0,
+          0.0
+        ],
+        "Size": [
+          0.546,
+          0.814,
+          0.274
+        ]
+      }
+    },
+    {
+      "className": "Part",
+      "name": "Cage33",
+      "properties": {
+        "Anchored": true,
+        "CanCollide": false,
+        "Material": "Metal",
+        "Color": {
+          "Color3uint8": [
+            8,
+            61,
+            80
+          ]
+        },
+        "Position": [
+          45.807,
+          3.193,
+          -42.581
+        ],
+        "Orientation": [
+          -22.5,
+          180.0,
+          0.0
+        ],
+        "Size": [
+          0.546,
+          0.626,
+          0.274
+        ]
+      }
+    },
+    {
+      "className": "Part",
+      "name": "Cage34",
+      "properties": {
+        "Anchored": true,
+        "CanCollide": false,
+        "Material": "Metal",
+        "Color": {
+          "Color3uint8": [
+            8,
+            61,
+            80
+          ]
+        },
+        "Position": [
+          43.082,
+          0.475,
+          -47.215
+        ],
+        "Orientation": [
+          -22.501,
+          67.501,
+          -0.001
+        ],
+        "Size": [
+          0.546,
+          0.814,
+          0.274
+        ]
+      }
+    },
+    {
+      "className": "Part",
+      "name": "Cage35",
+      "properties": {
+        "Anchored": true,
+        "CanCollide": false,
+        "Material": "Metal",
+        "Color": {
+          "Color3uint8": [
+            8,
+            61,
+            80
+          ]
+        },
+        "Position": [
+          48.95,
+          0.486,
+          -44.785
+        ],
+        "Orientation": [
+          -22.5,
+          -112.5,
+          0.001
+        ],
+        "Size": [
+          0.546,
+          0.814,
+          0.274
+        ]
+      }
+    },
+    {
+      "className": "Part",
+      "name": "Cage36",
+      "properties": {
+        "Anchored": true,
+        "CanCollide": false,
+        "Material": "Metal",
+        "Color": {
+          "Color3uint8": [
+            8,
+            61,
+            80
+          ]
+        },
+        "Position": [
+          42.929,
+          1.923,
+          -47.279
+        ],
+        "Orientation": [
+          0.0,
+          67.501,
+          -0.001
+        ],
+        "Size": [
+          0.546,
+          2.192,
+          0.274
+        ]
+      }
+    },
+    {
+      "className": "Part",
+      "name": "Cage37",
+      "properties": {
+        "Anchored": true,
+        "CanCollide": false,
+        "Material": "Metal",
+        "Color": {
+          "Color3uint8": [
+            8,
+            61,
+            80
+          ]
+        },
+        "Position": [
+          48.421,
+          0.412,
+          -48.358
+        ],
+        "Orientation": [
+          -22.5,
+          -44.999,
+          0.001
+        ],
+        "Size": [
+          0.546,
+          0.814,
+          0.274
+        ]
+      }
+    },
+    {
+      "className": "Part",
+      "name": "Cage38",
+      "properties": {
+        "Anchored": true,
+        "CanCollide": false,
+        "Material": "Metal",
+        "Color": {
+          "Color3uint8": [
+            8,
+            61,
+            80
+          ]
+        },
+        "Position": [
+          49.175,
+          3.203,
+          -44.692
+        ],
+        "Orientation": [
+          -22.5,
+          -112.5,
+          0.001
+        ],
+        "Size": [
+          0.546,
+          0.626,
+          0.274
+        ]
+      }
+    },
+    {
+      "className": "Part",
+      "name": "Cage39",
+      "properties": {
+        "Anchored": true,
+        "CanCollide": false,
+        "Material": "Metal",
+        "Color": {
+          "Color3uint8": [
+            8,
+            61,
+            80
+          ]
+        },
+        "Position": [
+          47.412,
+          3.136,
+          -49.404
+        ],
+        "Orientation": [
+          -22.5,
+          -22.5,
+          0.0
+        ],
+        "Size": [
+          0.546,
+          0.626,
+          0.274
+        ]
+      }
+    },
+    {
+      "className": "Part",
+      "name": "Cage40",
+      "properties": {
+        "Anchored": true,
+        "CanCollide": false,
+        "Material": "Metal",
+        "Color": {
+          "Color3uint8": [
+            8,
+            61,
+            80
+          ]
+        },
+        "Position": [
+          44.743,
+          3.147,
+          -42.96
+        ],
+        "Orientation": [
+          -22.5,
+          157.501,
+          -0.0
+        ],
+        "Size": [
+          0.546,
+          0.626,
+          0.274
+        ]
+      }
+    },
+    {
+      "className": "Part",
+      "name": "Cage41",
+      "properties": {
+        "Anchored": true,
+        "CanCollide": false,
+        "Material": "Metal",
+        "Color": {
+          "Color3uint8": [
+            8,
+            61,
+            80
+          ]
+        },
+        "Position": [
+          49.129,
+          1.861,
+          -47.39
+        ],
+        "Orientation": [
+          -0.0,
+          -67.499,
+          0.001
+        ],
+        "Size": [
+          0.546,
+          2.192,
+          0.274
+        ]
+      }
+    },
+    {
+      "className": "Part",
+      "name": "Cage42",
+      "properties": {
+        "Anchored": true,
+        "CanCollide": false,
+        "Material": "Metal",
+        "Color": {
+          "Color3uint8": [
+            8,
+            61,
+            80
+          ]
+        },
+        "Position": [
+          44.837,
+          0.429,
+          -43.187
+        ],
+        "Orientation": [
+          -22.5,
+          157.501,
+          -0.0
+        ],
+        "Size": [
+          0.546,
+          0.814,
+          0.274
+        ]
+      }
+    },
+    {
+      "className": "Part",
+      "name": "Cage43",
+      "properties": {
+        "Anchored": true,
+        "CanCollide": false,
+        "Material": "Metal",
+        "Color": {
+          "Color3uint8": [
+            8,
+            61,
+            80
+          ]
+        },
+        "Position": [
+          48.539,
+          1.861,
+          -48.475
+        ],
+        "Orientation": [
+          0.0,
+          -44.999,
+          0.001
+        ],
+        "Size": [
+          0.546,
+          2.192,
+          0.274
+        ]
+      }
+    },
+    {
+      "className": "Part",
+      "name": "Cage44",
+      "properties": {
+        "Anchored": true,
+        "CanCollide": false,
+        "Material": "Metal",
+        "Color": {
+          "Color3uint8": [
+            8,
+            61,
+            80
+          ]
+        },
+        "Position": [
+          44.774,
+          1.877,
+          -43.033
+        ],
+        "Orientation": [
+          0.0,
+          157.5,
+          -0.0
+        ],
+        "Size": [
+          0.546,
+          2.192,
+          0.274
+        ]
+      }
+    },
+    {
+      "className": "Part",
+      "name": "Cage46",
+      "properties": {
+        "Anchored": true,
+        "CanCollide": false,
+        "Material": "Metal",
+        "Color": {
+          "Color3uint8": [
+            8,
+            61,
+            80
+          ]
+        },
+        "Position": [
+          49.408,
+          1.855,
+          -46.012
+        ],
+        "Orientation": [
+          0.0,
+          -89.999,
+          0.001
+        ],
+        "Size": [
+          0.546,
+          2.192,
+          0.274
+        ]
+      }
+    },
+    {
+      "className": "Part",
+      "name": "Cage47",
+      "properties": {
+        "Anchored": true,
+        "CanCollide": false,
+        "Material": "Metal",
+        "Color": {
+          "Color3uint8": [
+            8,
+            61,
+            80
+          ]
+        },
+        "Position": [
+          45.807,
+          0.464,
+          -49.175
+        ],
+        "Orientation": [
+          -22.5,
+          0.0,
+          -0.0
+        ],
+        "Size": [
+          0.546,
+          0.814,
+          0.274
+        ]
+      }
+    },
+    {
+      "className": "Part",
+      "name": "Cage48",
+      "properties": {
+        "Anchored": true,
+        "CanCollide": false,
+        "Material": "Metal",
+        "Color": {
+          "Color3uint8": [
+            8,
+            61,
+            80
+          ]
+        },
+        "Position": [
+          45.807,
+          1.912,
+          -49.34
+        ],
+        "Orientation": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "Size": [
+          0.546,
+          2.192,
+          0.274
+        ]
+      }
+    },
+    {
+      "className": "Part",
+      "name": "Cage49",
+      "properties": {
+        "Anchored": true,
+        "CanCollide": false,
+        "Material": "Metal",
+        "Color": {
+          "Color3uint8": [
+            8,
+            61,
+            80
+          ]
+        },
+        "Position": [
+          48.244,
+          0.48,
+          -43.675
+        ],
+        "Orientation": [
+          -22.5,
+          -135.0,
+          0.001
+        ],
+        "Size": [
+          0.546,
+          0.814,
+          0.274
+        ]
+      }
+    }
+  ],
+  "attributes": {
+    "Flame": "hex"
+  }
+}

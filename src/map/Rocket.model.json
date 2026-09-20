@@ -1,0 +1,26 @@
+{
+  "className": "MeshPart",
+  "name": "Rocket",
+  "properties": {
+    "Anchored": true,
+    "CanCollide": true,
+    "Material": "SmoothPlastic",
+    "Position": [
+      -49.769,
+      10.56,
+      -48.526
+    ],
+    "Orientation": [
+      0,
+      35,
+      0
+    ],
+    "Size": [
+      12.12,
+      21.12,
+      7.905
+    ],
+    "MeshId": "pblockz://d9e6be02148de8cf6418896b74adf68bca5672667e45cb011a2b0381d48ebaf5?chain=943:0x0f9D08e13BE2345856026615d05F7251F07efAfA:485&mime=model%2Fobj",
+    "TextureID": "pblockz://04c0d821237e725897c60d73c22890a6006d6b89984ababd77eb0731d9b4f181?chain=943:0x0f9D08e13BE2345856026615d05F7251F07efAfA:486&mime=image%2Fpng"
+  }
+}

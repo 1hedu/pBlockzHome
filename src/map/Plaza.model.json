@@ -1,0 +1,255 @@
+{
+  "className": "Model",
+  "children": [
+    {
+      "className": "Part",
+      "name": "Ground",
+      "properties": {
+        "Anchored": true,
+        "Material": "Grass",
+        "Color": {
+          "Color3uint8": [
+            106,
+            137,
+            88
+          ]
+        },
+        "Position": [
+          0,
+          -0.5,
+          0
+        ],
+        "Size": [
+          140,
+          1,
+          140
+        ]
+      }
+    },
+    {
+      "className": "Part",
+      "name": "Paving",
+      "properties": {
+        "Anchored": true,
+        "Material": "Slate",
+        "Color": {
+          "Color3uint8": [
+            176,
+            172,
+            165
+          ]
+        },
+        "Position": [
+          0,
+          0.25,
+          -1
+        ],
+        "Size": [
+          48,
+          0.5,
+          34
+        ]
+      }
+    },
+    {
+      "className": "Part",
+      "name": "PavingInlay",
+      "properties": {
+        "Anchored": true,
+        "Material": "Slate",
+        "Color": {
+          "Color3uint8": [
+            150,
+            146,
+            140
+          ]
+        },
+        "Position": [
+          0,
+          0.55,
+          -2
+        ],
+        "Size": [
+          22,
+          0.1,
+          22
+        ]
+      }
+    },
+    {
+      "className": "Part",
+      "name": "PathNorth",
+      "properties": {
+        "Anchored": true,
+        "Material": "Slate",
+        "Color": {
+          "Color3uint8": [
+            168,
+            164,
+            157
+          ]
+        },
+        "Position": [
+          0,
+          0.25,
+          -34
+        ],
+        "Size": [
+          8,
+          0.5,
+          32
+        ]
+      }
+    },
+    {
+      "className": "Part",
+      "name": "PathSouth",
+      "properties": {
+        "Anchored": true,
+        "Material": "Slate",
+        "Color": {
+          "Color3uint8": [
+            168,
+            164,
+            157
+          ]
+        },
+        "Position": [
+          0,
+          0.25,
+          33
+        ],
+        "Size": [
+          8,
+          0.5,
+          34
+        ]
+      }
+    },
+    {
+      "className": "Part",
+      "name": "PathWest",
+      "properties": {
+        "Anchored": true,
+        "Material": "Slate",
+        "Color": {
+          "Color3uint8": [
+            168,
+            164,
+            157
+          ]
+        },
+        "Position": [
+          -39,
+          0.25,
+          0
+        ],
+        "Size": [
+          30,
+          0.5,
+          8
+        ]
+      }
+    },
+    {
+      "className": "Part",
+      "name": "PathEast",
+      "properties": {
+        "Anchored": true,
+        "Material": "Slate",
+        "Color": {
+          "Color3uint8": [
+            168,
+            164,
+            157
+          ]
+        },
+        "Position": [
+          39,
+          0.25,
+          0
+        ],
+        "Size": [
+          30,
+          0.5,
+          8
+        ]
+      }
+    },
+    {
+      "className": "Part",
+      "name": "PathTailor",
+      "properties": {
+        "Anchored": true,
+        "Material": "Slate",
+        "Color": {
+          "Color3uint8": [
+            168,
+            164,
+            157
+          ]
+        },
+        "Position": [
+          -46,
+          0.25,
+          25
+        ],
+        "Size": [
+          8,
+          0.5,
+          42
+        ]
+      }
+    },
+    {
+      "className": "Part",
+      "name": "TreeSpot",
+      "properties": {
+        "Anchored": true,
+        "CanCollide": false,
+        "Transparency": 1,
+        "Position": [
+          40.787,
+          0,
+          40.448
+        ],
+        "Orientation": [
+          0,
+          20,
+          0
+        ],
+        "Size": [
+          4,
+          1,
+          4
+        ]
+      }
+    },
+    {
+      "className": "SpawnLocation",
+      "name": "TownSpawn",
+      "properties": {
+        "Anchored": true,
+        "Duration": 6,
+        "Material": "Slate",
+        "Color": {
+          "Color3uint8": [
+            88,
+            132,
+            200
+          ]
+        },
+        "Position": [
+          -41.177,
+          0.7,
+          -40.149
+        ],
+        "Size": [
+          8,
+          0.4,
+          8
+        ]
+      }
+    }
+  ]
+}

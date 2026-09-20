@@ -1,0 +1,58 @@
+{
+  "className": "Model",
+  "name": "Tree",
+  "children": [
+    {
+      "className": "MeshPart",
+      "name": "Trunk",
+      "properties": {
+        "Anchored": true,
+        "CanCollide": true,
+        "Material": "Wood",
+        "Position": [
+          40.571,
+          16.508,
+          41.034
+        ],
+        "Orientation": [
+          0,
+          20,
+          0
+        ],
+        "Size": [
+          30.404,
+          33.016,
+          27.372
+        ],
+        "MeshId": "pblockz://20588cd754b6eb50b3a2bbf8d3d0d537b5a33c263c3a3604e8574c643c6d70eb?chain=943:0x0f9D08e13BE2345856026615d05F7251F07efAfA:617&mime=model%2Fobj",
+        "TextureID": "pblockz://39667013482943e7684ada115cf7ab1e5e1f01dc731cdebc28a016676f357d20?chain=943:0x0f9D08e13BE2345856026615d05F7251F07efAfA:488&mime=image%2Fpng"
+      }
+    },
+    {
+      "className": "MeshPart",
+      "name": "Canopy",
+      "properties": {
+        "Anchored": true,
+        "CanCollide": true,
+        "Material": "Neon",
+        "Position": [
+          40.787,
+          23.077,
+          40.448
+        ],
+        "Orientation": [
+          0,
+          20,
+          0
+        ],
+        "Size": [
+          37.76,
+          25.846,
+          33.152
+        ],
+        "MeshId": "pblockz://33317b15b87a35a62a36da31efcfb971be6d4e2c5e2dc8569e802a15ce77e229?chain=943:0x0f9D08e13BE2345856026615d05F7251F07efAfA:618&mime=model%2Fobj",
+        "TextureID": "pblockz://39667013482943e7684ada115cf7ab1e5e1f01dc731cdebc28a016676f357d20?chain=943:0x0f9D08e13BE2345856026615d05F7251F07efAfA:488&mime=image%2Fpng"
+      }
+    }
+  ]
+}

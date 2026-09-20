@@ -1,0 +1,1268 @@
+{
+  "className": "Model",
+  "children": [
+    {
+      "className": "Part",
+      "name": "WestShop",
+      "properties": {
+        "Anchored": true,
+        "Material": "Brick",
+        "Color": {
+          "Color3uint8": [
+            156,
+            96,
+            82
+          ]
+        },
+        "Position": [
+          -52,
+          5,
+          0
+        ],
+        "Size": [
+          10,
+          10,
+          20
+        ]
+      }
+    },
+    {
+      "className": "Part",
+      "name": "WestAwning",
+      "properties": {
+        "Anchored": true,
+        "Material": "Fabric",
+        "Color": {
+          "Color3uint8": [
+            88,
+            132,
+            200
+          ]
+        },
+        "Position": [
+          -46,
+          6.5,
+          0
+        ],
+        "Size": [
+          3,
+          0.4,
+          18
+        ]
+      }
+    },
+    {
+      "className": "Part",
+      "name": "EastShop",
+      "properties": {
+        "Anchored": true,
+        "Material": "Brick",
+        "Color": {
+          "Color3uint8": [
+            140,
+            122,
+            96
+          ]
+        },
+        "Position": [
+          52,
+          5,
+          0
+        ],
+        "Size": [
+          10,
+          10,
+          20
+        ]
+      }
+    },
+    {
+      "className": "Part",
+      "name": "EastAwning",
+      "properties": {
+        "Anchored": true,
+        "Material": "Fabric",
+        "Color": {
+          "Color3uint8": [
+            186,
+            148,
+            84
+          ]
+        },
+        "Position": [
+          46,
+          6.5,
+          0
+        ],
+        "Size": [
+          3,
+          0.4,
+          18
+        ]
+      }
+    },
+    {
+      "className": "Part",
+      "name": "SouthHall",
+      "properties": {
+        "Anchored": true,
+        "Material": "Brick",
+        "Color": {
+          "Color3uint8": [
+            130,
+            128,
+            132
+          ]
+        },
+        "Position": [
+          0,
+          4,
+          52
+        ],
+        "Size": [
+          26,
+          8,
+          8
+        ]
+      }
+    },
+    {
+      "className": "Part",
+      "name": "LampWest",
+      "properties": {
+        "Anchored": true,
+        "Material": "Metal",
+        "Color": {
+          "Color3uint8": [
+            58,
+            58,
+            64
+          ]
+        },
+        "Position": [
+          -15,
+          3.5,
+          -14
+        ],
+        "Size": [
+          0.5,
+          7,
+          0.5
+        ]
+      },
+      "children": [
+        {
+          "className": "Part",
+          "name": "Bulb",
+          "properties": {
+            "Anchored": true,
+            "Shape": "Ball",
+            "Material": "Neon",
+            "Color": {
+              "Color3uint8": [
+                199,
+                178,
+                133
+              ]
+            },
+            "Position": [
+              -15,
+              7.4,
+              -14
+            ],
+            "Size": [
+              1.1,
+              1.1,
+              1.1
+            ]
+          },
+          "children": [
+            {
+              "className": "PointLight",
+              "name": "Light",
+              "properties": {
+                "Brightness": 2,
+                "Range": 22,
+                "Color": {
+                  "Color3uint8": [
+                    255,
+                    232,
+                    186
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "className": "Part",
+      "name": "LampEast",
+      "properties": {
+        "Anchored": true,
+        "Material": "Metal",
+        "Color": {
+          "Color3uint8": [
+            58,
+            58,
+            64
+          ]
+        },
+        "Position": [
+          15,
+          3.5,
+          -14
+        ],
+        "Size": [
+          0.5,
+          7,
+          0.5
+        ]
+      },
+      "children": [
+        {
+          "className": "Part",
+          "name": "Bulb",
+          "properties": {
+            "Anchored": true,
+            "Shape": "Ball",
+            "Material": "Neon",
+            "Color": {
+              "Color3uint8": [
+                199,
+                178,
+                133
+              ]
+            },
+            "Position": [
+              15,
+              7.4,
+              -14
+            ],
+            "Size": [
+              1.1,
+              1.1,
+              1.1
+            ]
+          },
+          "children": [
+            {
+              "className": "PointLight",
+              "name": "Light",
+              "properties": {
+                "Brightness": 2,
+                "Range": 22,
+                "Color": {
+                  "Color3uint8": [
+                    255,
+                    232,
+                    186
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "className": "Part",
+      "name": "LampSouthWest",
+      "properties": {
+        "Anchored": true,
+        "Material": "Metal",
+        "Color": {
+          "Color3uint8": [
+            58,
+            58,
+            64
+          ]
+        },
+        "Position": [
+          -15,
+          3.5,
+          14
+        ],
+        "Size": [
+          0.5,
+          7,
+          0.5
+        ]
+      },
+      "children": [
+        {
+          "className": "Part",
+          "name": "Bulb",
+          "properties": {
+            "Anchored": true,
+            "Shape": "Ball",
+            "Material": "Neon",
+            "Color": {
+              "Color3uint8": [
+                199,
+                178,
+                133
+              ]
+            },
+            "Position": [
+              -15,
+              7.4,
+              14
+            ],
+            "Size": [
+              1.1,
+              1.1,
+              1.1
+            ]
+          },
+          "children": [
+            {
+              "className": "PointLight",
+              "name": "Light",
+              "properties": {
+                "Brightness": 2,
+                "Range": 22,
+                "Color": {
+                  "Color3uint8": [
+                    255,
+                    232,
+                    186
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "className": "Part",
+      "name": "LampSouthEast",
+      "properties": {
+        "Anchored": true,
+        "Material": "Metal",
+        "Color": {
+          "Color3uint8": [
+            58,
+            58,
+            64
+          ]
+        },
+        "Position": [
+          15,
+          3.5,
+          14
+        ],
+        "Size": [
+          0.5,
+          7,
+          0.5
+        ]
+      },
+      "children": [
+        {
+          "className": "Part",
+          "name": "Bulb",
+          "properties": {
+            "Anchored": true,
+            "Shape": "Ball",
+            "Material": "Neon",
+            "Color": {
+              "Color3uint8": [
+                199,
+                178,
+                133
+              ]
+            },
+            "Position": [
+              15,
+              7.4,
+              14
+            ],
+            "Size": [
+              1.1,
+              1.1,
+              1.1
+            ]
+          },
+          "children": [
+            {
+              "className": "PointLight",
+              "name": "Light",
+              "properties": {
+                "Brightness": 2,
+                "Range": 22,
+                "Color": {
+                  "Color3uint8": [
+                    255,
+                    232,
+                    186
+                  ]
+                }
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "className": "Part",
+      "name": "BenchWest",
+      "properties": {
+        "Anchored": true,
+        "Material": "WoodPlanks",
+        "Color": {
+          "Color3uint8": [
+            110,
+            78,
+            52
+          ]
+        },
+        "Position": [
+          -11,
+          1.2,
+          4
+        ],
+        "Size": [
+          1.6,
+          0.4,
+          7
+        ]
+      },
+      "children": [
+        {
+          "className": "Seat",
+          "name": "BenchWest1",
+          "properties": {
+            "Anchored": true,
+            "Transparency": 1,
+            "Material": "WoodPlanks",
+            "Color": {
+              "Color3uint8": [
+                110,
+                78,
+                52
+              ]
+            },
+            "Position": [
+              -11,
+              1.35,
+              1.7
+            ],
+            "Orientation": [
+              0,
+              -90,
+              0
+            ],
+            "Size": [
+              1.6,
+              0.2,
+              2.2
+            ]
+          }
+        },
+        {
+          "className": "Seat",
+          "name": "BenchWest2",
+          "properties": {
+            "Anchored": true,
+            "Transparency": 1,
+            "Material": "WoodPlanks",
+            "Color": {
+              "Color3uint8": [
+                110,
+                78,
+                52
+              ]
+            },
+            "Position": [
+              -11,
+              1.35,
+              4.0
+            ],
+            "Orientation": [
+              0,
+              -90,
+              0
+            ],
+            "Size": [
+              1.6,
+              0.2,
+              2.2
+            ]
+          }
+        },
+        {
+          "className": "Seat",
+          "name": "BenchWest3",
+          "properties": {
+            "Anchored": true,
+            "Transparency": 1,
+            "Material": "WoodPlanks",
+            "Color": {
+              "Color3uint8": [
+                110,
+                78,
+                52
+              ]
+            },
+            "Position": [
+              -11,
+              1.35,
+              6.3
+            ],
+            "Orientation": [
+              0,
+              -90,
+              0
+            ],
+            "Size": [
+              1.6,
+              0.2,
+              2.2
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "className": "Part",
+      "name": "BenchEast",
+      "properties": {
+        "Anchored": true,
+        "Material": "WoodPlanks",
+        "Color": {
+          "Color3uint8": [
+            110,
+            78,
+            52
+          ]
+        },
+        "Position": [
+          11,
+          1.2,
+          4
+        ],
+        "Size": [
+          1.6,
+          0.4,
+          7
+        ]
+      },
+      "children": [
+        {
+          "className": "Seat",
+          "name": "BenchEast1",
+          "properties": {
+            "Anchored": true,
+            "Transparency": 1,
+            "Material": "WoodPlanks",
+            "Color": {
+              "Color3uint8": [
+                110,
+                78,
+                52
+              ]
+            },
+            "Position": [
+              11,
+              1.35,
+              1.7
+            ],
+            "Orientation": [
+              0,
+              90,
+              0
+            ],
+            "Size": [
+              1.6,
+              0.2,
+              2.2
+            ]
+          }
+        },
+        {
+          "className": "Seat",
+          "name": "BenchEast2",
+          "properties": {
+            "Anchored": true,
+            "Transparency": 1,
+            "Material": "WoodPlanks",
+            "Color": {
+              "Color3uint8": [
+                110,
+                78,
+                52
+              ]
+            },
+            "Position": [
+              11,
+              1.35,
+              4.0
+            ],
+            "Orientation": [
+              0,
+              90,
+              0
+            ],
+            "Size": [
+              1.6,
+              0.2,
+              2.2
+            ]
+          }
+        },
+        {
+          "className": "Seat",
+          "name": "BenchEast3",
+          "properties": {
+            "Anchored": true,
+            "Transparency": 1,
+            "Material": "WoodPlanks",
+            "Color": {
+              "Color3uint8": [
+                110,
+                78,
+                52
+              ]
+            },
+            "Position": [
+              11,
+              1.35,
+              6.3
+            ],
+            "Orientation": [
+              0,
+              90,
+              0
+            ],
+            "Size": [
+              1.6,
+              0.2,
+              2.2
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "className": "Part",
+      "name": "BenchNorthWest",
+      "properties": {
+        "Anchored": true,
+        "Material": "WoodPlanks",
+        "Color": {
+          "Color3uint8": [
+            110,
+            78,
+            52
+          ]
+        },
+        "Position": [
+          -11,
+          1.2,
+          -11.5
+        ],
+        "Size": [
+          1.6,
+          0.4,
+          7
+        ]
+      },
+      "children": [
+        {
+          "className": "Seat",
+          "name": "BenchNorthWest1",
+          "properties": {
+            "Anchored": true,
+            "Transparency": 1,
+            "Material": "WoodPlanks",
+            "Color": {
+              "Color3uint8": [
+                110,
+                78,
+                52
+              ]
+            },
+            "Position": [
+              -11,
+              1.35,
+              -13.8
+            ],
+            "Orientation": [
+              0,
+              -90,
+              0
+            ],
+            "Size": [
+              1.6,
+              0.2,
+              2.2
+            ]
+          }
+        },
+        {
+          "className": "Seat",
+          "name": "BenchNorthWest2",
+          "properties": {
+            "Anchored": true,
+            "Transparency": 1,
+            "Material": "WoodPlanks",
+            "Color": {
+              "Color3uint8": [
+                110,
+                78,
+                52
+              ]
+            },
+            "Position": [
+              -11,
+              1.35,
+              -11.5
+            ],
+            "Orientation": [
+              0,
+              -90,
+              0
+            ],
+            "Size": [
+              1.6,
+              0.2,
+              2.2
+            ]
+          }
+        },
+        {
+          "className": "Seat",
+          "name": "BenchNorthWest3",
+          "properties": {
+            "Anchored": true,
+            "Transparency": 1,
+            "Material": "WoodPlanks",
+            "Color": {
+              "Color3uint8": [
+                110,
+                78,
+                52
+              ]
+            },
+            "Position": [
+              -11,
+              1.35,
+              -9.2
+            ],
+            "Orientation": [
+              0,
+              -90,
+              0
+            ],
+            "Size": [
+              1.6,
+              0.2,
+              2.2
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "className": "Part",
+      "name": "BenchNorthEast",
+      "properties": {
+        "Anchored": true,
+        "Material": "WoodPlanks",
+        "Color": {
+          "Color3uint8": [
+            110,
+            78,
+            52
+          ]
+        },
+        "Position": [
+          11,
+          1.2,
+          -11.5
+        ],
+        "Size": [
+          1.6,
+          0.4,
+          7
+        ]
+      },
+      "children": [
+        {
+          "className": "Seat",
+          "name": "BenchNorthEast1",
+          "properties": {
+            "Anchored": true,
+            "Transparency": 1,
+            "Material": "WoodPlanks",
+            "Color": {
+              "Color3uint8": [
+                110,
+                78,
+                52
+              ]
+            },
+            "Position": [
+              11,
+              1.35,
+              -13.8
+            ],
+            "Orientation": [
+              0,
+              90,
+              0
+            ],
+            "Size": [
+              1.6,
+              0.2,
+              2.2
+            ]
+          }
+        },
+        {
+          "className": "Seat",
+          "name": "BenchNorthEast2",
+          "properties": {
+            "Anchored": true,
+            "Transparency": 1,
+            "Material": "WoodPlanks",
+            "Color": {
+              "Color3uint8": [
+                110,
+                78,
+                52
+              ]
+            },
+            "Position": [
+              11,
+              1.35,
+              -11.5
+            ],
+            "Orientation": [
+              0,
+              90,
+              0
+            ],
+            "Size": [
+              1.6,
+              0.2,
+              2.2
+            ]
+          }
+        },
+        {
+          "className": "Seat",
+          "name": "BenchNorthEast3",
+          "properties": {
+            "Anchored": true,
+            "Transparency": 1,
+            "Material": "WoodPlanks",
+            "Color": {
+              "Color3uint8": [
+                110,
+                78,
+                52
+              ]
+            },
+            "Position": [
+              11,
+              1.35,
+              -9.2
+            ],
+            "Orientation": [
+              0,
+              90,
+              0
+            ],
+            "Size": [
+              1.6,
+              0.2,
+              2.2
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "className": "Part",
+      "name": "TrampolineWestNorth",
+      "properties": {
+        "Anchored": true,
+        "Material": "Metal",
+        "Color": {
+          "Color3uint8": [
+            42,
+            42,
+            52
+          ]
+        },
+        "Position": [
+          -54.5,
+          10.45,
+          -7.0
+        ],
+        "Size": [
+          7,
+          1.4,
+          7
+        ],
+        "Orientation": [
+          0,
+          0,
+          -35.0
+        ]
+      },
+      "children": [
+        {
+          "className": "Part",
+          "name": "TrampolineWestNorthBed",
+          "properties": {
+            "Anchored": true,
+            "Material": "SmoothPlastic",
+            "CanCollide": false,
+            "Color": {
+              "Color3uint8": [
+                40,
+                190,
+                190
+              ]
+            },
+            "Position": [
+              -53.9551,
+              11.2282,
+              -7.0
+            ],
+            "Size": [
+              5.6,
+              0.35,
+              5.6
+            ],
+            "Orientation": [
+              0,
+              0,
+              -35.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "className": "Part",
+      "name": "TrampolineWestSouth",
+      "properties": {
+        "Anchored": true,
+        "Material": "Metal",
+        "Color": {
+          "Color3uint8": [
+            42,
+            42,
+            52
+          ]
+        },
+        "Position": [
+          -54.5,
+          10.45,
+          7.0
+        ],
+        "Size": [
+          7,
+          1.4,
+          7
+        ],
+        "Orientation": [
+          0,
+          0,
+          -35.0
+        ]
+      },
+      "children": [
+        {
+          "className": "Part",
+          "name": "TrampolineWestSouthBed",
+          "properties": {
+            "Anchored": true,
+            "Material": "SmoothPlastic",
+            "CanCollide": false,
+            "Color": {
+              "Color3uint8": [
+                40,
+                190,
+                190
+              ]
+            },
+            "Position": [
+              -53.9551,
+              11.2282,
+              7.0
+            ],
+            "Size": [
+              5.6,
+              0.35,
+              5.6
+            ],
+            "Orientation": [
+              0,
+              0,
+              -35.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "className": "Part",
+      "name": "TrampolineEastNorth",
+      "properties": {
+        "Anchored": true,
+        "Material": "Metal",
+        "Color": {
+          "Color3uint8": [
+            42,
+            42,
+            52
+          ]
+        },
+        "Position": [
+          54.5,
+          10.45,
+          -7.0
+        ],
+        "Size": [
+          7,
+          1.4,
+          7
+        ],
+        "Orientation": [
+          0,
+          0,
+          35.0
+        ]
+      },
+      "children": [
+        {
+          "className": "Part",
+          "name": "TrampolineEastNorthBed",
+          "properties": {
+            "Anchored": true,
+            "Material": "SmoothPlastic",
+            "CanCollide": false,
+            "Color": {
+              "Color3uint8": [
+                40,
+                190,
+                190
+              ]
+            },
+            "Position": [
+              53.9551,
+              11.2282,
+              -7.0
+            ],
+            "Size": [
+              5.6,
+              0.35,
+              5.6
+            ],
+            "Orientation": [
+              0,
+              0,
+              35.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "className": "Part",
+      "name": "TrampolineEastSouth",
+      "properties": {
+        "Anchored": true,
+        "Material": "Metal",
+        "Color": {
+          "Color3uint8": [
+            42,
+            42,
+            52
+          ]
+        },
+        "Position": [
+          54.5,
+          10.45,
+          7.0
+        ],
+        "Size": [
+          7,
+          1.4,
+          7
+        ],
+        "Orientation": [
+          0,
+          0,
+          35.0
+        ]
+      },
+      "children": [
+        {
+          "className": "Part",
+          "name": "TrampolineEastSouthBed",
+          "properties": {
+            "Anchored": true,
+            "Material": "SmoothPlastic",
+            "CanCollide": false,
+            "Color": {
+              "Color3uint8": [
+                40,
+                190,
+                190
+              ]
+            },
+            "Position": [
+              53.9551,
+              11.2282,
+              7.0
+            ],
+            "Size": [
+              5.6,
+              0.35,
+              5.6
+            ],
+            "Orientation": [
+              0,
+              0,
+              35.0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "className": "Part",
+      "name": "TrampolineHallWest",
+      "properties": {
+        "Anchored": true,
+        "Material": "Metal",
+        "Color": {
+          "Color3uint8": [
+            42,
+            42,
+            52
+          ]
+        },
+        "Position": [
+          -9.0,
+          8.45,
+          53.5
+        ],
+        "Size": [
+          7,
+          1.4,
+          7
+        ],
+        "Orientation": [
+          -35.0,
+          0,
+          0
+        ]
+      },
+      "children": [
+        {
+          "className": "Part",
+          "name": "TrampolineHallWestBed",
+          "properties": {
+            "Anchored": true,
+            "Material": "SmoothPlastic",
+            "CanCollide": false,
+            "Color": {
+              "Color3uint8": [
+                40,
+                190,
+                190
+              ]
+            },
+            "Position": [
+              -9.0,
+              9.2282,
+              52.9551
+            ],
+            "Size": [
+              5.6,
+              0.35,
+              5.6
+            ],
+            "Orientation": [
+              -35.0,
+              0,
+              0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "className": "Part",
+      "name": "TrampolineHallEast",
+      "properties": {
+        "Anchored": true,
+        "Material": "Metal",
+        "Color": {
+          "Color3uint8": [
+            42,
+            42,
+            52
+          ]
+        },
+        "Position": [
+          9.0,
+          8.45,
+          53.5
+        ],
+        "Size": [
+          7,
+          1.4,
+          7
+        ],
+        "Orientation": [
+          -35.0,
+          0,
+          0
+        ]
+      },
+      "children": [
+        {
+          "className": "Part",
+          "name": "TrampolineHallEastBed",
+          "properties": {
+            "Anchored": true,
+            "Material": "SmoothPlastic",
+            "CanCollide": false,
+            "Color": {
+              "Color3uint8": [
+                40,
+                190,
+                190
+              ]
+            },
+            "Position": [
+              9.0,
+              9.2282,
+              52.9551
+            ],
+            "Size": [
+              5.6,
+              0.35,
+              5.6
+            ],
+            "Orientation": [
+              -35.0,
+              0,
+              0
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

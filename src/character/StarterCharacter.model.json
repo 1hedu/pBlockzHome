@@ -1,0 +1,567 @@
+{
+  "className": "Model",
+  "properties": {
+    "PrimaryPart": "HumanoidRootPart"
+  },
+  "children": [
+    {
+      "className": "Part",
+      "name": "HumanoidRootPart",
+      "properties": {
+        "Size": [
+          2,
+          2,
+          1
+        ],
+        "Position": [
+          0,
+          0,
+          0
+        ],
+        "Transparency": 1,
+        "CanCollide": false
+      },
+      "children": [
+        {
+          "className": "Motor6D",
+          "name": "RootJoint",
+          "properties": {
+            "Part0": "HumanoidRootPart",
+            "Part1": "Torso",
+            "C0Position": [
+              0,
+              0,
+              0
+            ],
+            "C0Orientation": [
+              -90,
+              0,
+              180
+            ],
+            "C1Position": [
+              0,
+              0,
+              0
+            ],
+            "C1Orientation": [
+              -90,
+              0,
+              180
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "className": "Part",
+      "name": "Head",
+      "properties": {
+        "Size": [
+          2,
+          1,
+          1
+        ],
+        "Position": [
+          0,
+          1.5,
+          0
+        ],
+        "Color": [
+          0.5,
+          0,
+          1
+        ]
+      },
+      "children": [
+        {
+          "className": "SpecialMesh",
+          "name": "Mesh",
+          "properties": {
+            "MeshType": "Head",
+            "Scale": [
+              1,
+              2,
+              1
+            ],
+            "Offset": [
+              0,
+              0.37,
+              0
+            ]
+          }
+        },
+        {
+          "className": "Attachment",
+          "name": "HatAttachment",
+          "properties": {
+            "Position": [
+              0,
+              1.24,
+              0
+            ]
+          }
+        },
+        {
+          "className": "Attachment",
+          "name": "HairAttachment",
+          "properties": {
+            "Position": [
+              0,
+              1.24,
+              0
+            ]
+          }
+        },
+        {
+          "className": "Attachment",
+          "name": "FaceCenterAttachment",
+          "properties": {
+            "Position": [
+              0,
+              0,
+              0
+            ]
+          }
+        },
+        {
+          "className": "Attachment",
+          "name": "FaceFrontAttachment",
+          "properties": {
+            "Position": [
+              0,
+              0,
+              -0.5
+            ]
+          }
+        },
+        {
+          "className": "Attachment",
+          "name": "NeckAttachment",
+          "properties": {
+            "Position": [
+              0,
+              -0.5,
+              0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "className": "Part",
+      "name": "Torso",
+      "properties": {
+        "Size": [
+          2,
+          2,
+          1
+        ],
+        "Position": [
+          0,
+          0,
+          0
+        ],
+        "Color": [
+          0.5,
+          0,
+          1
+        ]
+      },
+      "children": [
+        {
+          "className": "Attachment",
+          "name": "NeckAttachment",
+          "properties": {
+            "Position": [
+              0,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "className": "Attachment",
+          "name": "BodyFrontAttachment",
+          "properties": {
+            "Position": [
+              0,
+              0,
+              -0.5
+            ]
+          }
+        },
+        {
+          "className": "Attachment",
+          "name": "BodyBackAttachment",
+          "properties": {
+            "Position": [
+              0,
+              0,
+              0.5
+            ]
+          }
+        },
+        {
+          "className": "Attachment",
+          "name": "LeftCollarAttachment",
+          "properties": {
+            "Position": [
+              -1,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "className": "Attachment",
+          "name": "RightCollarAttachment",
+          "properties": {
+            "Position": [
+              1,
+              1,
+              0
+            ]
+          }
+        },
+        {
+          "className": "Attachment",
+          "name": "WaistCenterAttachment",
+          "properties": {
+            "Position": [
+              0,
+              -1,
+              0
+            ]
+          }
+        },
+        {
+          "className": "Attachment",
+          "name": "WaistFrontAttachment",
+          "properties": {
+            "Position": [
+              0,
+              -1,
+              -0.5
+            ]
+          }
+        },
+        {
+          "className": "Attachment",
+          "name": "WaistBackAttachment",
+          "properties": {
+            "Position": [
+              0,
+              -1,
+              0.5
+            ]
+          }
+        },
+        {
+          "className": "Motor6D",
+          "name": "Neck",
+          "properties": {
+            "Part0": "Torso",
+            "Part1": "Head",
+            "C0Position": [
+              0,
+              1,
+              0
+            ],
+            "C0Orientation": [
+              -90,
+              0,
+              180
+            ],
+            "C1Position": [
+              0,
+              -0.5,
+              0
+            ],
+            "C1Orientation": [
+              -90,
+              0,
+              180
+            ]
+          }
+        },
+        {
+          "className": "Motor6D",
+          "name": "Left Shoulder",
+          "properties": {
+            "Part0": "Torso",
+            "Part1": "Left Arm",
+            "C0Position": [
+              -1,
+              0.5,
+              0
+            ],
+            "C0Orientation": [
+              0,
+              -90,
+              0
+            ],
+            "C1Position": [
+              0.5,
+              0.65,
+              0
+            ],
+            "C1Orientation": [
+              0,
+              -90,
+              0
+            ]
+          }
+        },
+        {
+          "className": "Motor6D",
+          "name": "Right Shoulder",
+          "properties": {
+            "Part0": "Torso",
+            "Part1": "Right Arm",
+            "C0Position": [
+              1,
+              0.5,
+              0
+            ],
+            "C0Orientation": [
+              0,
+              90,
+              0
+            ],
+            "C1Position": [
+              -0.5,
+              0.65,
+              0
+            ],
+            "C1Orientation": [
+              0,
+              90,
+              0
+            ]
+          }
+        },
+        {
+          "className": "Motor6D",
+          "name": "Left Hip",
+          "properties": {
+            "Part0": "Torso",
+            "Part1": "Left Leg",
+            "C0Position": [
+              -1,
+              -1,
+              0
+            ],
+            "C0Orientation": [
+              0,
+              -90,
+              0
+            ],
+            "C1Position": [
+              -0.5,
+              1,
+              0
+            ],
+            "C1Orientation": [
+              0,
+              -90,
+              0
+            ]
+          }
+        },
+        {
+          "className": "Motor6D",
+          "name": "Right Hip",
+          "properties": {
+            "Part0": "Torso",
+            "Part1": "Right Leg",
+            "C0Position": [
+              1,
+              -1,
+              0
+            ],
+            "C0Orientation": [
+              0,
+              90,
+              0
+            ],
+            "C1Position": [
+              0.5,
+              1,
+              0
+            ],
+            "C1Orientation": [
+              0,
+              90,
+              0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "className": "Part",
+      "name": "Left Arm",
+      "properties": {
+        "Size": [
+          1,
+          2.3,
+          1
+        ],
+        "Position": [
+          -1.5,
+          -0.15,
+          0
+        ],
+        "Color": [
+          0.5,
+          0,
+          1
+        ]
+      },
+      "children": [
+        {
+          "className": "Attachment",
+          "name": "LeftShoulderAttachment",
+          "properties": {
+            "Position": [
+              0,
+              1.15,
+              0
+            ]
+          }
+        },
+        {
+          "className": "Attachment",
+          "name": "LeftGripAttachment",
+          "properties": {
+            "Position": [
+              0,
+              -1.15,
+              0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "className": "Part",
+      "name": "Right Arm",
+      "properties": {
+        "Size": [
+          1,
+          2.3,
+          1
+        ],
+        "Position": [
+          1.5,
+          -0.15,
+          0
+        ],
+        "Color": [
+          0.5,
+          0,
+          1
+        ]
+      },
+      "children": [
+        {
+          "className": "Attachment",
+          "name": "RightShoulderAttachment",
+          "properties": {
+            "Position": [
+              0,
+              1.15,
+              0
+            ]
+          }
+        },
+        {
+          "className": "Attachment",
+          "name": "RightGripAttachment",
+          "properties": {
+            "Position": [
+              0,
+              -1.15,
+              0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "className": "Part",
+      "name": "Left Leg",
+      "properties": {
+        "Size": [
+          1,
+          2,
+          1
+        ],
+        "Position": [
+          -0.5,
+          -2,
+          0
+        ],
+        "Color": [
+          0.5,
+          0,
+          1
+        ]
+      },
+      "children": [
+        {
+          "className": "Attachment",
+          "name": "LeftFootAttachment",
+          "properties": {
+            "Position": [
+              0,
+              -1,
+              0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "className": "Part",
+      "name": "Right Leg",
+      "properties": {
+        "Size": [
+          1,
+          2,
+          1
+        ],
+        "Position": [
+          0.5,
+          -2,
+          0
+        ],
+        "Color": [
+          0.5,
+          0,
+          1
+        ]
+      },
+      "children": [
+        {
+          "className": "Attachment",
+          "name": "RightFootAttachment",
+          "properties": {
+            "Position": [
+              0,
+              -1,
+              0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "className": "Humanoid",
+      "name": "Humanoid",
+      "properties": {
+        "UseJumpPower": true
+      }
+    }
+  ]
+}

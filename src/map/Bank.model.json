@@ -1,0 +1,497 @@
+{
+  "className": "Model",
+  "children": [
+    {
+      "className": "Part",
+      "name": "Floor",
+      "properties": {
+        "Anchored": true,
+        "Material": "Marble",
+        "Color": {
+          "Color3uint8": [
+            222,
+            218,
+            205
+          ]
+        },
+        "Position": [
+          0,
+          0.5,
+          -53
+        ],
+        "Size": [
+          24,
+          1,
+          16
+        ]
+      }
+    },
+    {
+      "className": "Part",
+      "name": "Steps",
+      "properties": {
+        "Anchored": true,
+        "Material": "Marble",
+        "Color": {
+          "Color3uint8": [
+            210,
+            206,
+            194
+          ]
+        },
+        "Position": [
+          0,
+          0.35,
+          -44.4
+        ],
+        "Size": [
+          14,
+          0.7,
+          2
+        ]
+      }
+    },
+    {
+      "className": "Part",
+      "name": "BackWall",
+      "properties": {
+        "Anchored": true,
+        "Material": "Concrete",
+        "Color": {
+          "Color3uint8": [
+            196,
+            190,
+            176
+          ]
+        },
+        "Position": [
+          0,
+          5.5,
+          -60.5
+        ],
+        "Size": [
+          24,
+          10,
+          1
+        ]
+      }
+    },
+    {
+      "className": "Part",
+      "name": "WestWall",
+      "properties": {
+        "Anchored": true,
+        "Material": "Concrete",
+        "Color": {
+          "Color3uint8": [
+            196,
+            190,
+            176
+          ]
+        },
+        "Position": [
+          -11.5,
+          5.5,
+          -53
+        ],
+        "Size": [
+          1,
+          10,
+          16
+        ]
+      }
+    },
+    {
+      "className": "Part",
+      "name": "EastWall",
+      "properties": {
+        "Anchored": true,
+        "Material": "Concrete",
+        "Color": {
+          "Color3uint8": [
+            196,
+            190,
+            176
+          ]
+        },
+        "Position": [
+          11.5,
+          5.5,
+          -53
+        ],
+        "Size": [
+          1,
+          10,
+          16
+        ]
+      }
+    },
+    {
+      "className": "Part",
+      "name": "Roof",
+      "properties": {
+        "Anchored": true,
+        "Material": "Concrete",
+        "Color": {
+          "Color3uint8": [
+            174,
+            168,
+            156
+          ]
+        },
+        "Position": [
+          0,
+          10.75,
+          -53
+        ],
+        "Size": [
+          25,
+          0.5,
+          17
+        ]
+      }
+    },
+    {
+      "className": "Part",
+      "name": "PillarWest",
+      "properties": {
+        "Anchored": true,
+        "Material": "Marble",
+        "Color": {
+          "Color3uint8": [
+            232,
+            228,
+            218
+          ]
+        },
+        "Position": [
+          -9,
+          5.5,
+          -45.6
+        ],
+        "Size": [
+          1.6,
+          10,
+          1.6
+        ]
+      }
+    },
+    {
+      "className": "Part",
+      "name": "PillarEast",
+      "properties": {
+        "Anchored": true,
+        "Material": "Marble",
+        "Color": {
+          "Color3uint8": [
+            232,
+            228,
+            218
+          ]
+        },
+        "Position": [
+          9,
+          5.5,
+          -45.6
+        ],
+        "Size": [
+          1.6,
+          10,
+          1.6
+        ]
+      }
+    },
+    {
+      "className": "Part",
+      "name": "Lintel",
+      "properties": {
+        "Anchored": true,
+        "Material": "Marble",
+        "Color": {
+          "Color3uint8": [
+            232,
+            228,
+            218
+          ]
+        },
+        "Position": [
+          0,
+          10.2,
+          -45.6
+        ],
+        "Size": [
+          21,
+          1.4,
+          1.6
+        ]
+      },
+      "children": [
+        {
+          "className": "SurfaceGui",
+          "name": "Name",
+          "properties": {
+            "Face": "Back",
+            "SizingMode": "PixelsPerStud",
+            "PixelsPerStud": 60
+          },
+          "children": [
+            {
+              "className": "TextLabel",
+              "name": "Text",
+              "properties": {
+                "BackgroundTransparency": 1,
+                "Position": [
+                  [
+                    0,
+                    0
+                  ],
+                  [
+                    0.24,
+                    0
+                  ]
+                ],
+                "Size": [
+                  [
+                    1,
+                    0
+                  ],
+                  [
+                    0.7,
+                    0
+                  ]
+                ],
+                "Text": "BANK",
+                "TextColor3": {
+                  "Color3uint8": [
+                    64,
+                    132,
+                    255
+                  ]
+                },
+                "TextScaled": true
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "className": "Part",
+      "name": "Counter",
+      "properties": {
+        "Anchored": true,
+        "Material": "WoodPlanks",
+        "Color": {
+          "Color3uint8": [
+            92,
+            62,
+            42
+          ]
+        },
+        "Position": [
+          0,
+          2.5,
+          -55
+        ],
+        "Size": [
+          16,
+          3,
+          1.5
+        ]
+      }
+    },
+    {
+      "className": "Part",
+      "name": "CounterTop",
+      "properties": {
+        "Anchored": true,
+        "Material": "Marble",
+        "Color": {
+          "Color3uint8": [
+            40,
+            40,
+            46
+          ]
+        },
+        "Position": [
+          0,
+          4.15,
+          -55
+        ],
+        "Size": [
+          16.6,
+          0.3,
+          2.4
+        ]
+      }
+    },
+    {
+      "className": "Part",
+      "name": "Lamp",
+      "properties": {
+        "Anchored": true,
+        "Material": "Neon",
+        "Color": {
+          "Color3uint8": [
+            199,
+            184,
+            148
+          ]
+        },
+        "Position": [
+          0,
+          9.6,
+          -53
+        ],
+        "Size": [
+          6,
+          0.4,
+          6
+        ]
+      },
+      "children": [
+        {
+          "className": "PointLight",
+          "name": "Light",
+          "properties": {
+            "Brightness": 2.2,
+            "Range": 26,
+            "Color": {
+              "Color3uint8": [
+                255,
+                240,
+                205
+              ]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "className": "Part",
+      "name": "TrampolineBankWest",
+      "properties": {
+        "Anchored": true,
+        "Material": "Metal",
+        "Color": {
+          "Color3uint8": [
+            42,
+            42,
+            52
+          ]
+        },
+        "Position": [
+          -9.0,
+          11.45,
+          -59.0
+        ],
+        "Size": [
+          7,
+          1.4,
+          7
+        ],
+        "Orientation": [
+          35.0,
+          0,
+          0
+        ]
+      },
+      "children": [
+        {
+          "className": "Part",
+          "name": "TrampolineBankWestBed",
+          "properties": {
+            "Anchored": true,
+            "Material": "SmoothPlastic",
+            "CanCollide": false,
+            "Color": {
+              "Color3uint8": [
+                40,
+                190,
+                190
+              ]
+            },
+            "Position": [
+              -9.0,
+              12.2282,
+              -58.4551
+            ],
+            "Size": [
+              5.6,
+              0.35,
+              5.6
+            ],
+            "Orientation": [
+              35.0,
+              0,
+              0
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "className": "Part",
+      "name": "TrampolineBankEast",
+      "properties": {
+        "Anchored": true,
+        "Material": "Metal",
+        "Color": {
+          "Color3uint8": [
+            42,
+            42,
+            52
+          ]
+        },
+        "Position": [
+          9.0,
+          11.45,
+          -59.0
+        ],
+        "Size": [
+          7,
+          1.4,
+          7
+        ],
+        "Orientation": [
+          35.0,
+          0,
+          0
+        ]
+      },
+      "children": [
+        {
+          "className": "Part",
+          "name": "TrampolineBankEastBed",
+          "properties": {
+            "Anchored": true,
+            "Material": "SmoothPlastic",
+            "CanCollide": false,
+            "Color": {
+              "Color3uint8": [
+                40,
+                190,
+                190
+              ]
+            },
+            "Position": [
+              9.0,
+              12.2282,
+              -58.4551
+            ],
+            "Size": [
+              5.6,
+              0.35,
+              5.6
+            ],
+            "Orientation": [
+              35.0,
+              0,
+              0
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}
