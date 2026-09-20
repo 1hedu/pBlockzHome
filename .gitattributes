@@ -1,0 +1,7 @@
+# Bytes in, bytes out.
+#
+# This place is named on chain by the hash of its files, so a checkout that "helpfully"
+# turns LF into CRLF is a different place with a different hash -- published from here it
+# would not match the one published from the workspace, and a client verifying it would
+# refuse the lot. Nothing in here is ever to be translated.
+* -text
