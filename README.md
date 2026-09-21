@@ -3,7 +3,7 @@
 A town on PulseChain, played in PulseBlockz. Everything it is lives on chain: every script here
 is published by its content hash, and the hash of the whole thing is the game.
 
-    pblockz://69524cc89625f60ba751a511bd7d1ecbd6503e179577e7e93027f80b454840ea
+    pblockz://69524cc89625f60ba751a511bd7d1ecbd6503e179577e7e93027f80b454840ea?chain=943:0x0f9D08e13BE2345856026615d05F7251F07efAfA:1403&mime=application%2Fjson
 
 Open that link in the PulseBlockz Player to play it alone, or join the town at
 `play.safewrap.xyz:8800`, where the same hash is what the server runs.
