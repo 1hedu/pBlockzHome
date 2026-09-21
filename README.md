@@ -23,7 +23,7 @@ Open that link in the PulseBlockz Player to play it alone, or join the town at
 ## What is not here
 
 The engine, the Studio, the Player, the Publisher and the host layer are
-[PulseBlockz](https://github.com/1hedu/pBlox) — the suite this is a game for. `town/` has no
+PulseBlockz, the suite this is a game for. `town/` has no
 `host/` folder for that reason: those scripts are the suite's, copied into a project by its
 `scripts/sync-host.js`, and a second copy here would only drift. To run `town/` you need the
 suite's checkout beside this one, for `host/` and for the engine the project loads.
