@@ -1,0 +1,16 @@
+; PulseBlockz Town -- a calm square with a bank you can walk into.
+; Nothing falls on your head here: no brick dropping, no runaway script, no NPCs
+; on patrol. Just the town and Rivet behind the counter.
+
+config_version=5
+
+[application]
+
+config/name="PulseBlockz Town"
+run/main_scene="res://Main.tscn"
+config/features=PackedStringArray("4.3", "Forward Plus")
+
+[autoload]
+
+Curation="*res://host/Curation.gd"
+ChainAssets="*res://host/ChainAssets.gd"

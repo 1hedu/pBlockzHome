@@ -91,8 +91,14 @@ function Scan.page(view: string, id: string?, handler)
 		end
 	end)
 	task.delay(FORGET, function()
+		-- Answered already: the page landed, settle cleared it and conn called the handler.
+		if outstanding[n] == nil then return end
 		settle(n)
 		pcall(function() conn:Disconnect() end)
+		-- A caller learns that it is no longer waiting from its handler and from nothing
+		-- else, so a page that never came is handed the shape a refused page has. Dropping
+		-- it silently leaves the window on "Loading..." and it never asks again.
+		handler({ ok = false, message = "The explorer didn't answer in time." })
 	end)
 	return n
 end

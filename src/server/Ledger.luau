@@ -179,12 +179,22 @@ function Ledger.data(player)
 	view.chain.inventory = cat.inventory
 	view.chain.assetstore = cat.assetstore
 	view.items = h and h.items or {}
-	local owned = {}
-	for _, item in ipairs(view.items) do if item.id then owned[item.id] = true end end
+	-- By the bytes as well as by the id. A listing's id is a Registry number; the same thing in
+	-- somebody's bag, taken off that shelf, is an Inventory record named by the content hash of
+	-- its document (Shop.server.luau), so its id is a bytes32 that no Registry number can equal.
+	-- The uri of that document is what both carry, and the hash in it is the one name the two
+	-- id spaces share.
+	local owned, ownedBytes = {}, {}
+	for _, item in ipairs(view.items) do
+		if item.id then owned[item.id] = true end
+		local hash = tostring(item.uri or ""):match("^pblockz://(%x+)")
+		if hash then ownedBytes[hash:lower()] = true end
+	end
 	view.listings = {}
 	for _, l in ipairs(cat.listings or {}) do
 		local one = table.clone(l)
-		one.owned = owned[l.id] == true
+		local hash = tostring(l.uri or ""):match("^pblockz://(%x+)")
+		one.owned = owned[l.id] == true or (hash ~= nil and ownedBytes[hash:lower()] == true)
 		table.insert(view.listings, one)
 	end
 	rank(view)

@@ -56,8 +56,10 @@ local function made(d)
 	end
 	local out = {}
 	for _, item in ipairs((d or {}).items or {}) do
-		local hash = tostring(item.hash or ""):gsub("^0x", ""):lower()
-		if item.source == "inventory" and not shelf[hash] then table.insert(out, item) end
+		-- Matched on the item's uri: the hash an item was read with is cleared before it is
+		-- published (Chain.server.luau, readHoldings), and the uri is what it carries here.
+		local hash = tostring(item.uri or ""):match("^pblockz://(%x+)")
+		if item.source == "inventory" and not (hash and shelf[hash:lower()]) then table.insert(out, item) end
 	end
 	return out
 end

@@ -439,7 +439,7 @@ function answers.fishing(_d, player)
 		return { "Space fishing's done with your own wallet -- every cast is yours, and",
 			"so is every fish. Sign in with one and come see me." }, menuFor(player)
 	end
-	ReplicatedStorage:WaitForChild("Notify"):FireClient(player, { Title = "Fishing Rod", Text = "You got a Fishing Rod from Funmaster Mike." })
+	ReplicatedStorage:WaitForChild("Notify"):FireClient(player, { Title = "Dysnomia Rod", Text = "You got a Dysnomia Rod from Funmaster Mike." })
 	return { "Turn the other cheek kinda guy? Here you go, the space fishing is",
 		"excellent right now. Just throw a cast anywhere off the edge of the map." }, menuFor(player)
 end

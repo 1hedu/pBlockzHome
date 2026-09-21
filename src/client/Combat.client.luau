@@ -27,6 +27,7 @@ local CLIPS = {
 	dies = "SfxDies",             -- you were finished
 	lowhp = "SfxLowHp",           -- one container left
 	fall = "SfxFall",             -- over the edge
+	item = "SfxItem",             -- a candle mended somebody, heard at both ends
 }
 
 local sounds = {}

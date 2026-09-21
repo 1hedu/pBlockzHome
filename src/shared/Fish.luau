@@ -29,7 +29,7 @@ Fish.COLOURS = {
 Fish.EVERLIVING = 9                              -- the contract's species number for it
 Fish.EVERLIVING_NAME = "Everliving Fish"
 Fish.EVERLIVING_RGB = { 196, 160, 112 }          -- well lighter than Louis's leather
-Fish.ROD = "Fishing Rod"
+Fish.ROD = "Dysnomia Rod"
 
 --- What a species is called, and what its model is called: "Red Fish", "Everliving Fish".
 function Fish.nameOf(species)

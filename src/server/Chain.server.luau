@@ -40,6 +40,7 @@ local HttpService = game:GetService("HttpService")
 
 local Ledger = require(script.Parent.Ledger)
 local Contracts = require(ReplicatedStorage:WaitForChild("Contracts"))
+local Theme = require(ReplicatedStorage:WaitForChild("Theme"))
 
 -- How long to wait on one batch. Ledger.request's default of twenty seconds is sized for a
 -- single call; a hundred-odd of them across three round trips on a public node is not, and
@@ -579,6 +580,13 @@ local function readHoldings(address)
 
 	-- Models for everything they hold: what they hold is what they may wear.
 	describe(items)
+	-- And the name of the rung beside its number, the way a listing carries one (Ledger.data's
+	-- rank). The bag and the shelf card are the same thing seen twice, and a tooltip with the
+	-- colour of a rung but not its word is the shelf's sentence with the noun taken out.
+	-- Nothing is named for a rung it has not got: an item with no metadata read has no tier.
+	for _, item in ipairs(items) do
+		if item.tier then item.tier_name = Theme.rarityName(item.tier) end
+	end
 	dress(items, true)
 	return items
 end

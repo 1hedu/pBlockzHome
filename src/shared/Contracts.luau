@@ -28,7 +28,7 @@ local Contracts = {
 	-- Space fishing: every cast and every catch, decided on chain by a random number, and the one
 	-- Everliving Fish token for whoever finds it first. Empty until it is deployed
 	-- (scripts/deploy-fishing.js), and until then nobody can cast.
-	Fishing = "0x143535dC808F7c47c0C56516d15c170A045c0993",
+	Fishing = "0x5d8CB335B202e456b82113a92cBEb6508a5746Fc",
 
 	-- What the town's owner announces: the newest shows in chat, in gold, and the Hall of Records keeps
 	-- them all. Owned by whoever deploys it, and the only thing it lets them do is post. Empty until it

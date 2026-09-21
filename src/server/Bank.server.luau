@@ -220,6 +220,13 @@ function answers.send_to(d, player, _arg, typed)
 	-- What to send, before how much. It used to be PLS and nothing else, which is a bank that
 	-- can only move one of the things it holds for you.
 	local list = sendable(d)
+	-- Nothing read yet is not nothing held. The wallet leaves pulsex out until a read of the
+	-- pools has answered, and telling somebody their money is gone is worse than telling them
+	-- to wait a moment.
+	if type(d.pulsex) ~= "table" then
+		return { ("To %s."):format(Ledger.short(to)), "",
+			"I haven't got your balances back yet. Ask me again in a moment." }, MENU
+	end
 	if #list == 0 then
 		return { ("To %s."):format(Ledger.short(to)), "",
 			"You've nothing to send: every balance I can see is empty." }, MENU

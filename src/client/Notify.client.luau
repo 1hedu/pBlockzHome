@@ -1,4 +1,4 @@
--- Notifications the town sends you: "You got a Fishing Rod", and the like.
+-- Notifications the town sends you: "You got a Dysnomia Rod", and the like.
 --
 -- Roblox's own corner card, StarterGui:SetCore("SendNotification"). Only a LocalScript can call
 -- SetCore, so the server says what to show down the Notify remote and this shows it.

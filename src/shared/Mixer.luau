@@ -33,7 +33,7 @@ local Mixer = {}
 -- peaks above -5 dBFS any more, so the limiter is left for sums rather than sitting on
 -- every loud clip.
 local MUSIC = 0.35
-local SFX = 1.0
+local SFX = 1.35
 
 local function group(name: string, volume: number, parent: Instance?)
 	local host = SoundService or workspace

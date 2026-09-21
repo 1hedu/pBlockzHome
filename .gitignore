@@ -1,0 +1,5 @@
+# What a build or a run makes, not what the game is.
+town/bin/
+town/build/
+town/.godot/
+node_modules/

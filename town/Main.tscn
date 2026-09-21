@@ -1,0 +1,20 @@
+[gd_scene load_steps=4 format=3 uid="uid://bt0wnpblockz2main"]
+
+[ext_resource type="Script" path="res://Main.gd" id="1_main"]
+[ext_resource type="Script" path="res://host/ScriptSync.gd" id="2_sync"]
+[ext_resource type="Script" path="res://host/Wallet.gd" id="3_wallet"]
+
+[node name="Main" type="Node3D"]
+script = ExtResource("1_main")
+
+[node name="World" type="PulseBlockzWorld" parent="."]
+http_enabled = true
+player_name = "Founder"
+user_id = 7
+
+[node name="ScriptSync" type="Node" parent="."]
+script = ExtResource("2_sync")
+
+[node name="Wallet" type="Node" parent="."]
+script = ExtResource("3_wallet")
+dev_key_from_repo = true

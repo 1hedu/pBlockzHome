@@ -1,0 +1,200 @@
+{
+  "signer": "0x6436a4B6458c3AC0F497219b9D3A28942cBfb0c0",
+  "key": "0x810828157c4d7f65d5178735567e1cf30ea80bbb8fcba39302fb4157f4cc7427",
+  "vectors": [
+    {
+      "name": "the EIP's own Mail",
+      "typed": {
+        "domain": {
+          "name": "Ether Mail",
+          "version": "1",
+          "chainId": 1,
+          "verifyingContract": "0xCcCCccccCCCCcCCCCCCcCcCccCcCCCcCcccccccC"
+        },
+        "types": {
+          "Person": [
+            {
+              "name": "name",
+              "type": "string"
+            },
+            {
+              "name": "wallet",
+              "type": "address"
+            }
+          ],
+          "Mail": [
+            {
+              "name": "from",
+              "type": "Person"
+            },
+            {
+              "name": "to",
+              "type": "Person"
+            },
+            {
+              "name": "contents",
+              "type": "string"
+            }
+          ]
+        },
+        "primaryType": "Mail",
+        "message": {
+          "from": {
+            "name": "Cow",
+            "wallet": "0xCD2a3d9F938E13CD947Ec05AbC7FE734Df8DD826"
+          },
+          "to": {
+            "name": "Bob",
+            "wallet": "0xbBbBBBBbbBBBbbbBbbBbbbbBBbBbbbbBbBbbBBbB"
+          },
+          "contents": "Hello, Bob!"
+        }
+      },
+      "digest": "0xbe609aee343fb3c4b28e1df9e632fca64fcfaede20f02e86244efddf30957bd2",
+      "signature": "0xd75984e14a74d53084a382104a231eddad9aa7b4bc327ef025ec8ea29e53c00f0a650fd21e00cdb134abaf844a40e3808d7f1c5280b4314c6cfe21f3bfe995321b"
+    },
+    {
+      "name": "a duel result",
+      "typed": {
+        "domain": {
+          "name": "PulseBlockz Duels",
+          "version": "1",
+          "chainId": 943,
+          "verifyingContract": "0x1111111111111111111111111111111111111111"
+        },
+        "types": {
+          "Result": [
+            {
+              "name": "id",
+              "type": "bytes32"
+            },
+            {
+              "name": "teamA",
+              "type": "address[]"
+            },
+            {
+              "name": "teamB",
+              "type": "address[]"
+            },
+            {
+              "name": "killsA",
+              "type": "uint16[]"
+            },
+            {
+              "name": "killsB",
+              "type": "uint16[]"
+            },
+            {
+              "name": "limit",
+              "type": "uint16"
+            },
+            {
+              "name": "winner",
+              "type": "uint8"
+            },
+            {
+              "name": "endedAt",
+              "type": "uint64"
+            }
+          ]
+        },
+        "primaryType": "Result",
+        "message": {
+          "id": "0x915e9bbe5e5f305463e6715e78a0314f27868afe52be69d1402c96e96ae94cac",
+          "teamA": [
+            "0x6181C6099D50DCab711e6531BAe4a37b069B1F01",
+            "0xCD2a3d9F938E13CD947Ec05AbC7FE734Df8DD826"
+          ],
+          "teamB": [
+            "0xe84706a9f8056742013D2972469903DB2f692757",
+            "0xbBbBBBBbbBBBbbbBbbBbbbbBBbBbbbbBbBbbBBbB"
+          ],
+          "killsA": [
+            3,
+            2
+          ],
+          "killsB": [
+            4,
+            0
+          ],
+          "limit": 5,
+          "winner": 1,
+          "endedAt": 1757800000
+        }
+      },
+      "digest": "0x1d8c8b97a9b673c0019ca852a22c1abe4d4ff01b0d4f79db656cbb09046bcc03",
+      "signature": "0xda3f7ad213ac2f3de46c8d609f0e1ae31fcf33c1481b41b8fb3b8a3d9e4be91933c697687c7135256116bc6c58f89b6669c47ce39989c8a05f43bc9fd56877821c"
+    },
+    {
+      "name": "the rest of the types",
+      "typed": {
+        "domain": {
+          "name": "Everything",
+          "chainId": 369
+        },
+        "types": {
+          "Item": [
+            {
+              "name": "tag",
+              "type": "bytes4"
+            },
+            {
+              "name": "on",
+              "type": "bool"
+            },
+            {
+              "name": "n",
+              "type": "int32"
+            }
+          ],
+          "Bag": [
+            {
+              "name": "items",
+              "type": "Item[]"
+            },
+            {
+              "name": "pair",
+              "type": "uint8[2]"
+            },
+            {
+              "name": "blob",
+              "type": "bytes"
+            },
+            {
+              "name": "big",
+              "type": "uint256"
+            },
+            {
+              "name": "note",
+              "type": "string"
+            }
+          ]
+        },
+        "primaryType": "Bag",
+        "message": {
+          "items": [
+            {
+              "tag": "0xdeadbeef",
+              "on": true,
+              "n": -7
+            },
+            {
+              "tag": "0x00000001",
+              "on": false,
+              "n": 12
+            }
+          ],
+          "pair": [
+            3,
+            4
+          ],
+          "blob": "0x0102030405",
+          "big": "115792089237316195423570985008687907853269984665640564039457584007913129639935",
+          "note": "mind the gap"
+        }
+      },
+      "digest": "0x288b3bcee555017bc60669075d79228128dd37bc848e8a3c9f46ffbe680d4c9b",
+      "signature": "0xbcc375ef29f6339a5a697308f1c3f05fbaf8bc7a1f41a13f47b8a7d59da0cc4e482f4fdd801cf35a5f8626e83a827fca0b68ddc1ee95d7c74fbe1dc093f94d3a1c"
+    }
+  ]
+}
