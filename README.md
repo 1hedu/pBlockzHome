@@ -1,5 +1,7 @@
 # pBlockz Home
 
+![pBlockz Home](models/pblockzhome-thumb.jpg)
+
 A town on PulseChain, played in PulseBlockz. Everything it is lives on chain: every script here
 is published by its content hash, and the hash of the whole thing is the game.
 
