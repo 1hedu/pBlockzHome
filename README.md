@@ -2,8 +2,9 @@
 
 ![pBlockz Home](models/pblockzhome-thumb.jpg)
 
-A town on PulseChain, played in PulseBlockz. Everything it is lives on chain: every script here
-is published by its content hash, and the hash of the whole thing is the game.
+A town on PulseChain, played in [PulseBlockz](https://github.com/1hedu/PulseBlockz). Everything it is lives on
+chain: every script here is published by its content hash, and the hash of the whole thing is
+the game.
 
     pblockz://69524cc89625f60ba751a511bd7d1ecbd6503e179577e7e93027f80b454840ea?chain=943:0x0f9D08e13BE2345856026615d05F7251F07efAfA:1403&mime=application%2Fjson
 
@@ -25,8 +26,8 @@ Open that link in the PulseBlockz Player to play it alone, or join the town at
 ## What is not here
 
 The engine, the Studio, the Player, the Publisher and the host layer are
-PulseBlockz, the suite this is a game for. `town/` has no
-`host/` folder for that reason: those scripts are the suite's, copied into a project by its
+[PulseBlockz](https://github.com/1hedu/PulseBlockz), the suite this is a game for. `town/` has no `host/` folder
+for that reason: those scripts are the suite's, copied into a project by its
 `scripts/sync-host.js`, and a second copy here would only drift. To run `town/` you need the
 suite's checkout beside this one, for `host/` and for the engine the project loads.
 
