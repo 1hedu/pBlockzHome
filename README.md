@@ -32,10 +32,16 @@ suite's checkout beside this one, for `host/` and for the engine the project loa
 
     node tools/publish-place-assets.js          # the art, each by its own hash
     node <suite>/scripts/publish-experience.js . "pBlockz Home" \
+      --description "pBlockz Home v1: the town." \
+      --thumbnail models/pblockzhome-thumb.jpg \
+      --splash town/splash.png \
       --uses chain,transact,sign,pulsex,scan,market \
       --server play.safewrap.xyz:8800 \
       --assets place-assets.json \
       --contracts src/shared/Contracts.luau
 
 The uses are what the place may ask a player's wallet for, and a client refuses anything not
-declared — so a missing flag is a game that silently cannot read the chain.
+declared — so a missing flag is a game that silently cannot read the chain. Every flag above
+is part of the place: drop the thumbnail and it has no picture anywhere it is listed, drop the
+splash and it opens on a black screen. They go on chain with the manifest, so the only way to
+add one later is to publish the place again, under a new hash.
